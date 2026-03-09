@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>cart - mini store</title>
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html">
+          mini store
+          <span class="brand-subtitle">checkout · limited quantity</span>
+        </a>
+        <nav class="site-nav" aria-label="primary">
+          <a class="nav-link" href="../index.html">catalog</a>
+          <a class="nav-link is-active" href="cart.html">cart</a>
+          <a class="nav-link" href="users.html">users</a>
+          <a class="nav-link" href="login.html">login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container grid grid-2">
+        <section>
+          <h1 class="page-title">shopping cart</h1>
+          <p class="page-subtitle">static checkout screen</p>
+
+          <div class="cart" aria-label="cart items">
+            <div class="cart-row">
+              <div>
+                <strong>wireless mouse</strong>
+                <div class="badge">quantity left: 12</div>
+              </div>
+              <div>
+                <a class="btn-danger" href="#" aria-disabled="true">remove</a>
+              </div>
+            </div>
+
+            <div class="cart-row">
+              <div>
+                <strong>portable ssd 1tb</strong>
+                <div class="badge badge-warning">quantity left: 4</div>
+              </div>
+              <div>
+                <a class="btn-danger" href="#" aria-disabled="true">remove</a>
+              </div>
+            </div>
+
+            <div class="cart-total" aria-label="total">
+              <span>total</span>
+              <span>$149.98</span>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="page-title">checkout</h2>
+          <p class="page-subtitle">placeholders for validation and errors</p>
+
+          <form class="form" action="#" method="post">
+            <div class="form-row">
+              <label class="form-label" for="full-name">full name</label>
+              <input class="form-input" id="full-name" name="full-name" type="text" required>
+              <p class="form-validation">validation placeholder: name is required.</p>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label" for="address">address</label>
+              <input class="form-input" id="address" name="address" type="text" required>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label" for="payment">payment method</label>
+              <select class="form-input" id="payment" name="payment" required>
+                <option value="card">card</option>
+                <option value="cash">cash on delivery</option>
+              </select>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn-primary" type="submit">buy now</button>
+              <a class="btn" href="../index.html">continue shopping</a>
+            </div>
+          </form>
+
+          <div class="notice notice-error" role="alert">
+            <h2 class="notice-title">error notification placeholder</h2>
+            <p class="notice-text">some items are out of stock (example).</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small>lab 1 · cart/checkout</small>
+        <small><a href="../index.html">home</a></small>
+      </div>
+    </footer>
+  </body>
+</html>

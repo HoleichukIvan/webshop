@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>user management - mini store</title>
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html">
+          mini store
+          <span class="brand-subtitle">admin area · static</span>
+        </a>
+        <nav class="site-nav" aria-label="primary">
+          <a class="nav-link" href="../index.html">catalog</a>
+          <a class="nav-link" href="cart.html">cart</a>
+          <a class="nav-link is-active" href="users.html">users</a>
+          <a class="nav-link" href="login.html">login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container">
+        <section>
+          <h1 class="page-title">user management</h1>
+          <p class="page-subtitle">table + placeholders for create/edit/info/delete</p>
+
+          <div class="form" role="group" aria-label="actions">
+            <div class="form-actions">
+              <a class="btn-primary" href="#create-user">create user</a>
+              <span class="badge">delete placeholder: 🗑 button in table</span>
+            </div>
+          </div>
+        </section>
+
+        <section aria-label="users list">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">username</th>
+                <th scope="col">role</th>
+                <th scope="col">status</th>
+                <th scope="col">actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>admin</td>
+                <td><span class="badge badge-success">admin</span></td>
+                <td>active</td>
+                <td>
+                  <a class="btn" href="user-info.html">info</a>
+                  <a class="btn" href="user-edit.html">edit</a>
+                  <a class="btn-danger" href="#" aria-disabled="true">delete</a>
+                </td>
+              </tr>
+              <tr>
+                <td>john</td>
+                <td><span class="badge">regular</span></td>
+                <td>active</td>
+                <td>
+                  <a class="btn" href="user-info.html">info</a>
+                  <a class="btn" href="user-edit.html">edit</a>
+                  <a class="btn-danger" href="#" aria-disabled="true">delete</a>
+                </td>
+              </tr>
+              <tr>
+                <td>maria</td>
+                <td><span class="badge">regular</span></td>
+                <td>blocked</td>
+                <td>
+                  <a class="btn" href="user-info.html">info</a>
+                  <a class="btn" href="user-edit.html">edit</a>
+                  <a class="btn-danger" href="#" aria-disabled="true">delete</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <div class="notice notice-error" role="alert">
+            <h2 class="notice-title">error notification placeholder</h2>
+            <p class="notice-text">cannot delete the last admin account. (static example)</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="modal" id="create-user" role="dialog" aria-modal="true" aria-label="create user dialog">
+      <div class="modal-dialog">
+        <h2 class="modal-title">create user</h2>
+        <form class="form" action="#" method="post">
+          <div class="form-row">
+            <label class="form-label" for="create-username">username</label>
+            <input class="form-input" id="create-username" name="username" type="text" required>
+            <p class="form-validation">validation placeholder: username must be at least 3 characters.</p>
+          </div>
+
+          <div class="form-row">
+            <label class="form-label" for="create-password">password</label>
+            <input class="form-input" id="create-password" name="password" type="password" required>
+          </div>
+
+          <div class="form-row">
+            <label class="form-label" for="create-confirm">confirm password</label>
+            <input class="form-input" id="create-confirm" name="confirm" type="password" required>
+            <p class="form-validation">validation placeholder: passwords do not match.</p>
+          </div>
+
+          <div class="form-row">
+            <label class="form-label" for="create-role">role</label>
+            <select class="form-input" id="create-role" name="role" required>
+              <option value="regular">regular</option>
+              <option value="admin">admin</option>
+            </select>
+          </div>
+
+          <div class="modal-actions">
+            <a class="btn" href="users.html">cancel</a>
+            <button class="btn-primary" type="submit">ok</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small>lab 1 · user management</small>
+        <small><a href="../index.html">home</a></small>
+      </div>
+    </footer>
+  </body>
+</html>

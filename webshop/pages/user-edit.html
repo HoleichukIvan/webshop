@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>edit user - mini store</title>
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html">
+          mini store
+          <span class="brand-subtitle">admin area · edit user</span>
+        </a>
+        <nav class="site-nav" aria-label="primary">
+          <a class="nav-link" href="../index.html">catalog</a>
+          <a class="nav-link" href="cart.html">cart</a>
+          <a class="nav-link is-active" href="users.html">users</a>
+          <a class="nav-link" href="login.html">login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container grid grid-2">
+        <section>
+          <h1 class="page-title">edit user</h1>
+          <p class="page-subtitle">screen placeholder (static)</p>
+
+          <form class="form" action="#" method="post">
+            <div class="form-row">
+              <label class="form-label" for="edit-username">username</label>
+              <input class="form-input" id="edit-username" name="username" type="text" value="john" required>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label" for="edit-role">role</label>
+              <select class="form-input" id="edit-role" name="role" required>
+                <option value="regular" selected>regular</option>
+                <option value="admin">admin</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label" for="edit-password">new password</label>
+              <input class="form-input" id="edit-password" name="password" type="password">
+              <p class="form-help">leave empty to keep the old password (placeholder).</p>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label" for="edit-confirm">confirm password</label>
+              <input class="form-input" id="edit-confirm" name="confirm" type="password">
+              <p class="form-validation">validation placeholder: passwords do not match.</p>
+            </div>
+
+            <div class="form-actions">
+              <a class="btn" href="users.html">cancel</a>
+              <button class="btn-primary" type="submit">save changes</button>
+            </div>
+          </form>
+        </section>
+
+        <section>
+          <div class="notice" role="status" aria-live="polite">
+            <h2 class="notice-title">validation placeholder</h2>
+            <p class="notice-text">show success or error after saving (static example).</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small>lab 1 · edit user</small>
+        <small><a href="users.html">back to users</a></small>
+      </div>
+    </footer>
+  </body>
+</html>

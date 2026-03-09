@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>login - mini store</title>
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html">
+          mini store
+          <span class="brand-subtitle">variant 6 · limited quantity</span>
+        </a>
+        <nav class="site-nav" aria-label="primary">
+          <a class="nav-link" href="../index.html">catalog</a>
+          <a class="nav-link" href="cart.html">cart</a>
+          <a class="nav-link" href="users.html">users</a>
+          <a class="nav-link is-active" href="login.html">login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container grid grid-2">
+        <section>
+          <h1 class="page-title">login</h1>
+          <p class="page-subtitle">static form (placeholder)</p>
+
+          <form class="form" action="#" method="post">
+            <div class="form-row">
+              <label class="form-label" for="username">username</label>
+              <input class="form-input" id="username" name="username" type="text" autocomplete="username" required>
+              <p class="form-validation">validation placeholder: username is required.</p>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label" for="password">password</label>
+              <input class="form-input" id="password" name="password" type="password" autocomplete="current-password" required>
+              <p class="form-help">tip: use any value, this page is static.</p>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn-primary" type="submit">sign in</button>
+              <a class="btn" href="../index.html">back to catalog</a>
+            </div>
+          </form>
+        </section>
+
+        <section>
+          <div class="notice notice-error" role="alert">
+            <h2 class="notice-title">error notification placeholder</h2>
+            <p class="notice-text">invalid username or password. (static example)</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small>lab 1 · login screen</small>
+        <small><a href="../index.html">home</a></small>
+      </div>
+    </footer>
+  </body>
+</html>

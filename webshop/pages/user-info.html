@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>user info - mini store</title>
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html">
+          mini store
+          <span class="brand-subtitle">admin area · user info</span>
+        </a>
+        <nav class="site-nav" aria-label="primary">
+          <a class="nav-link" href="../index.html">catalog</a>
+          <a class="nav-link" href="cart.html">cart</a>
+          <a class="nav-link is-active" href="users.html">users</a>
+          <a class="nav-link" href="login.html">login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container">
+        <section>
+          <h1 class="page-title">user info</h1>
+          <p class="page-subtitle">read-only view (static)</p>
+        </section>
+
+        <section class="grid grid-2">
+          <article class="card">
+            <h2 class="card-title">account</h2>
+            <p class="card-meta"><strong>username:</strong> john</p>
+            <p class="card-meta"><strong>role:</strong> regular</p>
+            <p class="card-meta"><strong>status:</strong> active</p>
+          </article>
+
+          <article class="card">
+            <h2 class="card-title">system elements</h2>
+            <p class="card-meta">delete placeholder: shown on users table.</p>
+            <p class="card-meta">error notifications: shown below.</p>
+          </article>
+        </section>
+
+        <section>
+          <div class="notice notice-error" role="alert">
+            <h2 class="notice-title">error notification placeholder</h2>
+            <p class="notice-text">failed to load additional user details. (static example)</p>
+          </div>
+        </section>
+
+        <section>
+          <div class="form" role="group" aria-label="navigation">
+            <div class="form-actions">
+              <a class="btn" href="users.html">back</a>
+              <a class="btn-primary" href="user-edit.html">edit</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small>lab 1 · user info</small>
+        <small><a href="users.html">users</a></small>
+      </div>
+    </footer>
+  </body>
+</html>
